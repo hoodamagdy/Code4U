@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #482ff7;
+    text-decoration: none;
+    color: cornsilk;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*The hero section*/
+
+#hero-section {
+    margin-top: 5vw;
+}
+
+.hero-container {
+    display: flex;
+}
+
+.hero {
+    height: 30vh;
+    width: 100%;
+    font-family: sans-serif;
+    position: relative;
+}
+
+nav {
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Comfortaa', cursive;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 15px 20px auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: cornsilk
+}
+
+nav ul li a:hover {
+    color: #ffd000;
+}
+
+.info {
+    margin-left: 8%;
+    margin-top: 15%;
+    color: cornsilk;
+}
+
+.info h1 {
+    font-size: 65px;
+    color: cornsilk;
+    margin-bottom: 20px;
+}
+
+.info span {
+    color: #ffd000;
+}
+
+.btn {
+    margin-top: 5px;
+}
+
+.img-box img {
+    /* height: 100%; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-50);
+    transition: bottom 1s, left 1s;
+}
+
+.img-box .backImg {
+    bottom: -6vw;
+}
+
+.img-box:hover .backImg {
+    bottom: 20px;
+}
+
+.img-box:hover .mainImg {
+    left: 14%;
+}
+
+.hero-section {
+    margin-bottom: 2vw;
+    margin-right: 5vw;
+}
+
+@media (max-width: 599px) {
+    .hero-container {
+        /* display: block; */
+    }
+    .info h1 {
+        font-size: 40px;
+        text-align: center;
+        position: relative;
+    }
+}
+
+@media(min-width:600px) and (max-width:700px) {
+    .info h1 {
+        font-size: 50px;
+        text-align: center;
+        position: relative;
+    }
+}
+
+@media(min-width:1200px) {
+    .img-box {
+        margin-top: 33vw;
+    }
+}
+
+
+/*The social Proof section*/
+
+#social-proof-section {
+    background-color: #2d6cdf;
+    color: cornsilk;
+    font-family: "Tahoma", Geneva, Verdana, sans-serif;
+    border-radius: 5%;
+    margin: 20vw 5px;
+    padding: 18px;
+}
+
+#customers-social-proof {
+    padding: 40px 0;
+}
+
+.social-proof-cover {
+    padding: 50px 0;
+    margin: 30px;
+}
+
+.review-head {
+    font-family: 'Fredoka One', cursive;
+    padding-bottom: 100px;
+}
+
+.testimonial img {
+    max-width: 159px;
+    margin: 0 auto 0 auto;
+    padding: 10px 0 0;
+    margin-bottom: 13px;
+}
+
+.testmonial blockquote {
+    border: 0;
+    font-size: italic;
+    padding: 5px 150px;
+    position: relative;
+}
+
+.testimonial blockquote::before,
+.testimonial blockquote::after {
+    font-size: 80px;
+    font-size: normal;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.testimonial blockquote::before {
+    content: "\201C";
+    top: 0;
+    left: 100px;
+}
+
+.testimonial blockquote::after {
+    content: "\201D";
+    bottom: 0;
+    right: 100px;
+}
+
+.testimonial-author p {
+    font-size: 17px;
+}
+
+.testimonial-author p strong {
+    display: block;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Fredoka One', cursive;
+}
+
+@media(min-width:500px) and (max-width:767px) {
+    .testimonial blockquote::before {
+        content: "\201C";
+        top: 0;
+        left: 50px;
+    }
+    .testimonial blockquote::after {
+        content: "\201D";
+        bottom: 0;
+        right: 5px;
+    }
+}
+
+
+/*Service section*/
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.h4 {
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+@media(max-width:500px) {
+    #service-section {
+        padding: 0 15px 0 0;
+    }
+}
+
+@media(min-width:501px) and (max-width:767px) {
+    #service-section {
+        padding: 0 15px 0 0;
+    }
+}
+
+
+/*Icons Section*/
+
+#icons-section {
+    margin: 10vw 0;
+    padding: 0;
+}
+
+.icons-container {
+    padding: 30px 90px;
+    border-radius: 20%;
+    /* position: absolute; */
+}
+
+.item {
+    margin-bottom: 4px;
+}
+
+@media(max-width:500px) {
+    svg {
+        padding: 10px;
+    }
+    .row {
+        margin-right: 5px;
+    }
+}
+
+@media(min-width:501px) and (max-width:767px) {
+    svg {
+        padding: 10px;
+    }
+}
